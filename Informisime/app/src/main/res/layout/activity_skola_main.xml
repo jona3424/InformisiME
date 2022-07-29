@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Activities.SkolaMainActivity"
+    android:screenOrientation="portrait"
+    >
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="92dp"
+        app:srcCompat="@drawable/ic_nakaslika"
+        android:contentDescription="" />
+
+    <TextView
+        android:id="@+id/skola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="22dp"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skola"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/adresa"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/ime_direktora"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linlaybr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="0dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/broj_telefona"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/directorname"
+            android:layout_marginStart="39dp"
+            android:layout_toEndOf="@+id/textView4"
+            android:textSize="18sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linlaybr"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/mail"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/twop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="23dp"
+        android:gravity="center"
+        android:text="@string/obrazovni_programi"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center_horizontal"
+        android:foregroundGravity="center">
+
+        <ImageView
+            android:id="@+id/fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/picture1" />
+
+        <ImageView
+            android:id="@+id/ig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/fb"
+            app:srcCompat="@drawable/picture2" />
+
+        <ImageView
+            android:id="@+id/gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/ig"
+            app:srcCompat="@drawable/picture3" />
+
+        <ImageView
+            android:id="@+id/ws"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/gps"
+            app:srcCompat="@drawable/picture4" />
+
+        <ImageView
+            android:id="@+id/yt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/ws"
+            app:srcCompat="@drawable/picture5" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skola"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/directorname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adress"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linlaybr"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:textSize="18sp" />
+
+</RelativeLayout>

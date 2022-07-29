@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Informiši.me</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="uvod1">Informiši.me je projekat razvijen u cilju lakšeg dobijanja informacija za buduće školovanje.
+Projekat će svim građanima Crne Gore omogućiti lakši pristup informacijama o svim obrazovnim programima koji se mogu izučavati u srednjim školama u Crnoj Gori.
+</string>
+
+    <string name="uvod2">Projekat su razvili učenici Srednje elektrotehničke škole “Vaso Aligrudić”, uz podršku mentora i saradnju sa Ministarstvom prosvjete Crne Gore.
+        </string>
+    <string name="uvodstatic">Za pokretanje aplikacije pritisnite dugme u donjem desnom ćošku.Nako toga se ovaj prozor više neće pojavljivati</string>
+    <string name="title_activity_uvod">UvodActivity</string>
+    <string name="tab_text_1">Naslov</string>
+    <string name="tab_text_2">O projektu</string>
+    <string name="tab_text_3">Saradnja</string>
+    <string name="tab_text_4">Start</string>
+    <string name="adresa">Adresa:</string>
+    <string name="ime_direktora">Ime direktora:</string>
+    <string name="broj_telefona">Broj telefona:</string>
+    <string name="mail">Mail:</string>
+    <string name="obrazovni_programi">OBRAZOVNI PROGRAMI</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

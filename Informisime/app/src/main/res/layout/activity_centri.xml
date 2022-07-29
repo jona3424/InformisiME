@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Activities.CentriActivity"
+    android:screenOrientation="portrait"
+    >
+
+    <ScrollView
+        android:id="@+id/skrol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="0dp"
+        android:foregroundGravity="center">
+
+        <LinearLayout
+            android:id="@+id/linlaycentri"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="288dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="51dp"
+        app:srcCompat="@drawable/ic_nakaslika" />
+</RelativeLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/background"-->
+<!--        tools:context=".Activities.CentriActivity">-->
+
+<!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--        android:id="@+id/linear"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="-2dp"-->
+<!--        android:layout_marginTop="-3dp"-->
+<!--        android:layout_marginEnd="2dp">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="288dp"-->
+<!--            android:layout_above="@+id/skrol"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginStart="51dp"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginEnd="51dp"-->
+<!--            android:layout_marginBottom="26dp"-->
+<!--            android:contentDescription=" "-->
+<!--            app:srcCompat="@drawable/ic_nakaslika" />-->
+
+<!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="464dp"-->
+<!--        android:layout_below="@+id/linear"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="0dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="0dp"-->
+<!--        android:layout_marginBottom="-2dp">-->
+
+<!--        <ScrollView-->
+<!--            android:id="@+id/skrol"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="434dp"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="11dp"-->
+<!--            android:layout_marginEnd="11dp"-->
+<!--            android:layout_marginBottom="0dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/linlaycentri"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical" />-->
+<!--        </ScrollView>-->
+<!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
+<!--</RelativeLayout>-->
+
+

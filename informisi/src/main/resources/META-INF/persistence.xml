@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.example_demo_jar_0.0.1-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.example.demo.model.RangiranjeUstanove</class>
+    <class>com.example.demo.model.VrednovanjeUstanove</class>
+    <class>com.example.demo.model.Centri</class>
+    <class>com.example.demo.model.Modularizovani</class>
+    <class>com.example.demo.model.CiljeviObrazovnih</class>
+    <class>com.example.demo.model.ModularizovaniUIzradi</class>
+    <class>com.example.demo.model.NemodNaAlbanskom</class>
+    <class>com.example.demo.model.Nemodularizovani</class>
+    <class>com.example.demo.model.OblastiModNaAlb</class>
+    <class>com.example.demo.model.Konkurs</class>
+    <class>com.example.demo.model.PotrebnaDokumenta</class>
+    <class>com.example.demo.model.Ustanove</class>
+    <class>com.example.demo.model.Ciljevi</class>
+    <class>com.example.demo.model.Rangiranje</class>
+    <class>com.example.demo.model.KorisniLinkovi</class>
+    <class>com.example.demo.model.Škole</class>
+    <class>com.example.demo.model.Oblasti</class>
+    <class>com.example.demo.model.Vrednovanje</class>
+    <class>com.example.demo.model.Kriterijumi</class>
+    <class>com.example.demo.model.OblastiNemod</class>
+    <class>com.example.demo.model.UčeničkiDomovi</class>
+    <class>com.example.demo.model.ObrazovniProgrami</class>
+    <class>com.example.demo.model.ModNaAlbanskom</class>
+    <class>com.example.demo.model.OblastiMod</class>
+    <class>com.example.demo.model.Meni</class>
+    <class>com.example.demo.model.OblastiNemodNaAlb</class>
+    <class>com.example.demo.model.ŠkoleUstanova</class>
+    <class>com.example.demo.model.OblastiModUPripremi</class>
+    <class>com.example.demo.model.KriterijumUstanove</class>
+    <class>com.example.demo.model.Menikonkurs</class>
+    <class>com.example.demo.model.Meniobrazovni</class>
+    <class>com.example.demo.model.LinkoviSkola</class>
+    <class>com.example.demo.model.Links</class>
+    <class>com.example.demo.model.ObrazovniSkola</class>
+    <class>com.example.demo.model.Info</class>
+    <class>com.example.demo.model.InfoSkola</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/informisi.me?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>
