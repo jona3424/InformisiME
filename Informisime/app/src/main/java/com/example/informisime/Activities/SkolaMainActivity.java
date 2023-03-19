@@ -84,7 +84,7 @@ public class SkolaMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 RequestQueue queue = Volley.newRequestQueue(SkolaMainActivity.this);
-                JsonArrayRequest jar1 = new JsonArrayRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/obrsk/dajobrsk/"+singleTon.getIdskole() , null, new Response.Listener<JSONArray>() {
+                JsonArrayRequest jar1 = new JsonArrayRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/obrsk/dajobrsk/"+singleTon.getIdskole() , null, new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
                         ObjectMapper op = new ObjectMapper();

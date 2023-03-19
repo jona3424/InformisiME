@@ -84,7 +84,7 @@ public class UstanoveActivity extends AppCompatActivity {
                     for(int i=0;i<=singleTon.getUstanove().size();i++){
                         if(u.getId()==i){
                             RequestQueue queue3 = Volley.newRequestQueue(UstanoveActivity.this);
-                            JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/skust/dajskust/"+ u.getId(), null, new Response.Listener<JSONArray>() {
+                            JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/skust/dajskust/"+ u.getId(), null, new Response.Listener<JSONArray>() {
                                 @Override
                                 public void onResponse(JSONArray response) {
                                     ObjectMapper op = new ObjectMapper();

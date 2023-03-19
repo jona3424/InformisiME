@@ -70,7 +70,7 @@ public class OblastiActivity extends AppCompatActivity {
                         if (singleTon.getPamtiodabraniop() == 1) {
 
                             RequestQueue queue3 = Volley.newRequestQueue(OblastiActivity.this);
-                            JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/oblmod/dajoblmod/" + o.getId(), null, new Response.Listener<JSONArray>() {
+                            JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/oblmod/dajoblmod/" + o.getId(), null, new Response.Listener<JSONArray>() {
                                 @Override
                                 public void onResponse(JSONArray response) {
                                     ObjectMapper op = new ObjectMapper();
@@ -95,7 +95,7 @@ public class OblastiActivity extends AppCompatActivity {
                         }
                         if (singleTon.getPamtiodabraniop() == 2) {
                             RequestQueue queue3 = Volley.newRequestQueue(OblastiActivity.this);
-                            JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/oblnemod/dajoblnemod/" + o.getId(), null, new Response.Listener<JSONArray>() {
+                            JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/oblnemod/dajoblnemod/" + o.getId(), null, new Response.Listener<JSONArray>() {
                                 @Override
                                 public void onResponse(JSONArray response) {
                                     ObjectMapper op = new ObjectMapper();

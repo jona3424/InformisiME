@@ -79,7 +79,7 @@ public class MeniActivity extends AppCompatActivity {
                     btnTag.startAnimation(animation1);
                     if(m.getId().equals(1)){
                     RequestQueue queue = Volley.newRequestQueue(MeniActivity.this);
-                    JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/ustanove/all", null, new Response.Listener<JSONArray>() {
+                    JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/ustanove/all", null, new Response.Listener<JSONArray>() {
                         @Override
                         public void onResponse(JSONArray response) {
                             ObjectMapper op = new ObjectMapper();
@@ -107,7 +107,7 @@ public class MeniActivity extends AppCompatActivity {
                     }
                     if(m.getId().equals(3)){
                         RequestQueue queue1 = Volley.newRequestQueue(MeniActivity.this);
-                        JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/menikonk/all", null, new Response.Listener<JSONArray>() {
+                        JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/menikonk/all", null, new Response.Listener<JSONArray>() {
                             @Override
                             public void onResponse(JSONArray response) {
                                 ObjectMapper op = new ObjectMapper();
@@ -131,7 +131,7 @@ public class MeniActivity extends AppCompatActivity {
                     }
                     if(m.getId().equals(4)){
                         RequestQueue queue1 = Volley.newRequestQueue(MeniActivity.this);
-                        JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/meniobr/all", null, new Response.Listener<JSONArray>() {
+                        JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/meniobr/all", null, new Response.Listener<JSONArray>() {
                             @Override
                             public void onResponse(JSONArray response) {
                                 ObjectMapper op = new ObjectMapper();
@@ -156,7 +156,7 @@ public class MeniActivity extends AppCompatActivity {
                     }
                     if (m.getId().equals(5)){
                         RequestQueue queue1 = Volley.newRequestQueue(MeniActivity.this);
-                        JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/ucedom/all", null, new Response.Listener<JSONArray>() {
+                        JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/ucedom/all", null, new Response.Listener<JSONArray>() {
                             @Override
                             public void onResponse(JSONArray response) {
                                 ObjectMapper op = new ObjectMapper();
@@ -180,7 +180,7 @@ public class MeniActivity extends AppCompatActivity {
                     }
                     if (m.getId().equals(6)){
                         RequestQueue queue2 = Volley.newRequestQueue(MeniActivity.this);
-                        JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/centri/all", null, new Response.Listener<JSONArray>() {
+                        JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/centri/all", null, new Response.Listener<JSONArray>() {
                             @Override
                             public void onResponse(JSONArray response) {
                                 ObjectMapper op = new ObjectMapper();
@@ -204,7 +204,7 @@ public class MeniActivity extends AppCompatActivity {
                     }
                     if (m.getId().equals(7)){
                         RequestQueue queue3 = Volley.newRequestQueue(MeniActivity.this);
-                        JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/korlink/all", null, new Response.Listener<JSONArray>() {
+                        JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/korlink/all", null, new Response.Listener<JSONArray>() {
                             @Override
                             public void onResponse(JSONArray response) {
                                 ObjectMapper op = new ObjectMapper();

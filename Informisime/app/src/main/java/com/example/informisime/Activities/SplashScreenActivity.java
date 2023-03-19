@@ -11,10 +11,12 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
+import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.informisime.Entities.Meni;
@@ -51,7 +53,7 @@ else {
 
 
             RequestQueue queue = Volley.newRequestQueue(SplashScreenActivity.this);
-            JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/meni/all", null, new Response.Listener<JSONArray>() {
+            JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/meni/all", null, new Response.Listener<JSONArray>() {
                 @Override
                 public void onResponse(JSONArray response) {
                     ObjectMapper op = new ObjectMapper();
@@ -62,14 +64,18 @@ else {
                         );
                         startActivity(new Intent(SplashScreenActivity.this, MeniActivity.class));
                         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-
                     } catch (JsonProcessingException e) {
                         e.printStackTrace();
                     }
                 }
-            }, null);
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    Log.e("Error", error.toString());
+                }
+            });
 
-
+            System.out.println(jar);
             queue.getCache().clear();
             queue.add(jar);
 

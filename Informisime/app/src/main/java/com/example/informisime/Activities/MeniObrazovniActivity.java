@@ -78,7 +78,7 @@ public class MeniObrazovniActivity extends AppCompatActivity {
                     btnTag.startAnimation(animation1);
 
                     RequestQueue queue3 = Volley.newRequestQueue(MeniObrazovniActivity.this);
-                    JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/oblasti/all", null, new Response.Listener<JSONArray>() {
+                    JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/oblasti/all", null, new Response.Listener<JSONArray>() {
                         @Override
                         public void onResponse(JSONArray response) {
                             ObjectMapper op = new ObjectMapper();

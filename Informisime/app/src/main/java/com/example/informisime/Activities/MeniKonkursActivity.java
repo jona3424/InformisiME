@@ -102,7 +102,7 @@ public class MeniKonkursActivity extends AppCompatActivity {
                     btnTag.startAnimation(animation1);
                     if(mk.getId().equals(1)) {
                         RequestQueue queue = Volley.newRequestQueue(MeniKonkursActivity.this);
-                        StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/files/dajoblmodalb/7",
+                        StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/files/dajoblmodalb/7",
                                 new Response.Listener<String>() {
                                     @Override
                                     public void onResponse(String response) {
@@ -128,7 +128,7 @@ public class MeniKonkursActivity extends AppCompatActivity {
 //                                            }
 
                                             downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
-                                            Uri uri = Uri.parse("http://apps.elektropg.online:2556/downloadFile/7");
+                                            Uri uri = Uri.parse("http://192.168.1.7:2556/downloadFile/7");
                                             DownloadManager.Request request = new DownloadManager.Request(uri);
                                             request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
                                             request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,naziv);
@@ -151,13 +151,13 @@ public class MeniKonkursActivity extends AppCompatActivity {
                     }
                     if(mk.getId().equals(3)){
                                 RequestQueue queue = Volley.newRequestQueue(MeniKonkursActivity.this);
-                                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/files/dajoblmodalb/8",
+                                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/files/dajoblmodalb/8",
                                         new Response.Listener<String>() {
                                             @Override
                                             public void onResponse(String response) {
                                                 naziv=response;
                                                 downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
-                                                Uri uri = Uri.parse("http://apps.elektropg.online:2556/downloadFile/8");
+                                                Uri uri = Uri.parse("http://192.168.1.7:2556/downloadFile/8");
                                                 DownloadManager.Request request = new DownloadManager.Request(uri);
                                                 request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
                                                 request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,naziv);
@@ -184,13 +184,13 @@ public class MeniKonkursActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 RequestQueue queue = Volley.newRequestQueue(MeniKonkursActivity.this);
-                                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/files/dajoblmodalb/3",
+                                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/files/dajoblmodalb/3",
                                         new Response.Listener<String>() {
                                             @Override
                                             public void onResponse(String response) {
                                                 naziv=response;
                                                 downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
-                                                Uri uri = Uri.parse("http://apps.elektropg.online:2556/downloadFile/3");
+                                                Uri uri = Uri.parse("http://192.168.1.7:2556/downloadFile/3");
                                                 DownloadManager.Request request = new DownloadManager.Request(uri);
                                                 request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
                                                 request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,naziv);
@@ -212,13 +212,13 @@ public class MeniKonkursActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 RequestQueue queue = Volley.newRequestQueue(MeniKonkursActivity.this);
-                                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/files/dajoblmodalb/10",
+                                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/files/dajoblmodalb/10",
                                         new Response.Listener<String>() {
                                             @Override
                                             public void onResponse(String response) {
                                                 naziv=response;
                                                 downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
-                                                Uri uri = Uri.parse("http://apps.elektropg.online:2556/downloadFile/10");
+                                                Uri uri = Uri.parse("http://192.168.1.7:2556/downloadFile/10");
                                                 DownloadManager.Request request = new DownloadManager.Request(uri);
                                                 request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
                                                 request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,naziv);
@@ -250,13 +250,13 @@ public class MeniKonkursActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 RequestQueue queue = Volley.newRequestQueue(MeniKonkursActivity.this);
-                                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/files/dajoblmodalb/4",
+                                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/files/dajoblmodalb/4",
                                         new Response.Listener<String>() {
                                             @Override
                                             public void onResponse(String response) {
                                                 naziv=response;
                                                 downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
-                                                Uri uri = Uri.parse("http://apps.elektropg.online:2556/downloadFile/4");
+                                                Uri uri = Uri.parse("http://192.168.1.7:2556/downloadFile/4");
                                                 DownloadManager.Request request = new DownloadManager.Request(uri);
                                                 request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
                                                 request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,naziv);
@@ -278,13 +278,13 @@ public class MeniKonkursActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 RequestQueue queue = Volley.newRequestQueue(MeniKonkursActivity.this);
-                                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/files/dajoblmodalb/2",
+                                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/files/dajoblmodalb/2",
                                         new Response.Listener<String>() {
                                             @Override
                                             public void onResponse(String response) {
                                                 naziv=response;
                                                 downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
-                                                Uri uri = Uri.parse("http://apps.elektropg.online:2556/downloadFile/2");
+                                                Uri uri = Uri.parse("http://192.168.1.7:2556/downloadFile/2");
                                                 DownloadManager.Request request = new DownloadManager.Request(uri);
                                                 request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
                                                 request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,naziv);
@@ -314,13 +314,13 @@ public class MeniKonkursActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 RequestQueue queue = Volley.newRequestQueue(MeniKonkursActivity.this);
-                                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/files/dajoblmodalb/1",
+                                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/files/dajoblmodalb/1",
                                         new Response.Listener<String>() {
                                             @Override
                                             public void onResponse(String response) {
                                                 naziv=response;
                                                 downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
-                                                Uri uri = Uri.parse("http://apps.elektropg.online:2556/downloadFile/1");
+                                                Uri uri = Uri.parse("http://192.168.1.7:2556/downloadFile/1");
                                                 DownloadManager.Request request = new DownloadManager.Request(uri);
                                                 request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
                                                 request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,naziv);
@@ -342,13 +342,13 @@ public class MeniKonkursActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 RequestQueue queue = Volley.newRequestQueue(MeniKonkursActivity.this);
-                                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/files/dajoblmodalb/6",
+                                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/files/dajoblmodalb/6",
                                         new Response.Listener<String>() {
                                             @Override
                                             public void onResponse(String response) {
                                                 naziv=response;
                                                 downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
-                                                Uri uri = Uri.parse("http://apps.elektropg.online:2556/downloadFile/6");
+                                                Uri uri = Uri.parse("http://192.168.1.7:2556/downloadFile/6");
                                                 DownloadManager.Request request = new DownloadManager.Request(uri);
                                                 request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
                                                 request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,naziv);
@@ -378,13 +378,13 @@ public class MeniKonkursActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 RequestQueue queue = Volley.newRequestQueue(MeniKonkursActivity.this);
-                                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/files/dajoblmodalb/11",
+                                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/files/dajoblmodalb/11",
                                         new Response.Listener<String>() {
                                             @Override
                                             public void onResponse(String response) {
                                                 naziv=response;
                                                 downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
-                                                Uri uri = Uri.parse("http://apps.elektropg.online:2556/downloadFile/11");
+                                                Uri uri = Uri.parse("http://192.168.1.7:2556/downloadFile/11");
                                                 DownloadManager.Request request = new DownloadManager.Request(uri);
                                                 request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
                                                 request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,naziv);
@@ -406,13 +406,13 @@ public class MeniKonkursActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 RequestQueue queue = Volley.newRequestQueue(MeniKonkursActivity.this);
-                                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/files/dajoblmodalb/5",
+                                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/files/dajoblmodalb/5",
                                         new Response.Listener<String>() {
                                             @Override
                                             public void onResponse(String response) {
                                                 naziv=response;
                                                 downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
-                                                Uri uri = Uri.parse("http://apps.elektropg.online:2556/downloadFile/5");
+                                                Uri uri = Uri.parse("http://192.168.1.7:2556/downloadFile/5");
                                                 DownloadManager.Request request = new DownloadManager.Request(uri);
                                                 request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
                                                 request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,naziv);

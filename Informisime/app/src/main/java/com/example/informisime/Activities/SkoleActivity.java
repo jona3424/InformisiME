@@ -81,7 +81,7 @@ public class SkoleActivity extends AppCompatActivity {
                     Animation animation1 = AnimationUtils.loadAnimation(c, R.anim.bounce);
                     btnTag.startAnimation(animation1);
                     RequestQueue queue3 = Volley.newRequestQueue(SkoleActivity.this);
-                    JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/linksk/dajlinks/"+su.getFkŠkole().getId() , null, new Response.Listener<JSONArray>() {
+                    JsonArrayRequest jar = new JsonArrayRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/linksk/dajlinks/"+su.getFkŠkole().getId() , null, new Response.Listener<JSONArray>() {
                         @Override
                         public void onResponse(JSONArray response) {
 
@@ -103,7 +103,7 @@ public class SkoleActivity extends AppCompatActivity {
                     queue3.add(jar);
 
                     RequestQueue queue = Volley.newRequestQueue(SkoleActivity.this);
-                    JsonArrayRequest jar1 = new JsonArrayRequest(Request.Method.GET, "http://apps.elektropg.online:2556/informisime/infsk/dajinfsk/"+su.getFkŠkole().getId() , null, new Response.Listener<JSONArray>() {
+                    JsonArrayRequest jar1 = new JsonArrayRequest(Request.Method.GET, "http://192.168.1.7:2556/informisime/infsk/dajinfsk/"+su.getFkŠkole().getId() , null, new Response.Listener<JSONArray>() {
                         @Override
                         public void onResponse(JSONArray response) {
                             ObjectMapper op = new ObjectMapper();
